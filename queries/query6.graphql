@@ -1,0 +1,12 @@
+query {
+  praticien(filter: { structure_id: { ville: { _eq: "Paris" } } }) {
+    id
+    nom
+    prenom
+    ville
+    structure_id {
+      nom
+      ville
+    }
+  }
+}

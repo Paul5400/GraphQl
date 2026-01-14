@@ -1,0 +1,6 @@
+mutation {
+  create_specialite_item(data: { libelle: "cardiologie", description: "Maladies du cœur" }) {
+    id
+    libelle
+  }
+}

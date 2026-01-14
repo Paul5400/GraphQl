@@ -1,0 +1,9 @@
+query {
+  praticien {
+    id
+    nom
+    prenom
+    telephone
+    ville
+  }
+}

@@ -1,0 +1,12 @@
+query {
+  praticien(filter: { ville: { _eq: "Paris" } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    specialite_id {
+      libelle
+    }
+  }
+}

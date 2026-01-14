@@ -1,0 +1,13 @@
+mutation {
+  create_praticien_item(data: {
+    nom: "Dupont",
+    prenom: "Jean",
+    ville: "Nancy",
+    email: "jean.dupont@test.fr",
+    telephone: "0601020304"
+  }) {
+    id
+    nom
+    prenom
+  }
+}

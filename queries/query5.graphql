@@ -1,0 +1,17 @@
+query {
+  praticien(filter: { email: { _contains: ".fr" } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    email
+    specialite_id {
+      libelle
+    }
+    structure_id {
+      nom
+      ville
+    }
+  }
+}

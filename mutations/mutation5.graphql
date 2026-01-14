@@ -1,0 +1,22 @@
+mutation {
+  create_praticien_item(data: {
+    id: "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+    nom: "Robert",
+    prenom: "Marie",
+    ville: "Paris",
+    email: "marie.robert@test.fr",
+    telephone: "0603040506",
+    titre: "Dr.",
+    specialite_id: {
+      id: 8,
+      libelle: "chirurgie",
+      description: "Chirurgie générale"
+    }
+  }) {
+    id
+    nom
+    specialite_id {
+      libelle
+    }
+  }
+}

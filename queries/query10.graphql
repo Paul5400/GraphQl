@@ -1,0 +1,14 @@
+query {
+  structure {
+    nom
+    ville
+    praticiens {
+      nom
+      prenom
+      email
+      specialite_id {
+        libelle
+      }
+    }
+  }
+}

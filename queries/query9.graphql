@@ -1,0 +1,9 @@
+query GetPraticiensByVille($ville: String!) {
+  praticien(filter: { ville: { _eq: $ville } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+  }
+}

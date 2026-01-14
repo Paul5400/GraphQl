@@ -1,0 +1,14 @@
+query {
+  parisiens: praticien(filter: { ville: { _eq: "Paris" } }) {
+    id
+    nom
+    prenom
+    ville
+  }
+  bourbonnais: praticien(filter: { ville: { _eq: "Bourdon-les-Bains" } }) {
+    id
+    nom
+    prenom
+    ville
+  }
+}

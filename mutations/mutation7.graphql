@@ -1,0 +1,10 @@
+mutation {
+  update_praticien_item(id: "692ba5b8-d7ca-47df-8a51-d34054c093ea", data: { structure_id: { id: "3444bdd2-8783-3aed-9a5e-4d298d2a2d7c" } }) {
+    id
+    nom
+    structure_id {
+      nom
+      ville
+    }
+  }
+}

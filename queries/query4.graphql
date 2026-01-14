@@ -1,0 +1,16 @@
+query {
+  praticien {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    specialite_id {
+      libelle
+    }
+    structure_id {
+      nom
+      ville
+    }
+  }
+}
