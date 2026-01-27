@@ -1,0 +1,26 @@
+meta {
+  name: Mutation 7
+  type: graphql
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  update_praticien_item(id: "3e4f5a6b-7c8d-9e0f-a1b2-c3d4e5f6a7b8", data: { structure_id: { id: "3444bdd2-8783-3aed-9a5e-4d298d2a2d7c" } }) {
+    nom
+    structure_id { 
+      nom 
+    }
+  }
+}
+}

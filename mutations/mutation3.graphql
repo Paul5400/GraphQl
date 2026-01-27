@@ -1,8 +1,9 @@
 mutation {
-  update_praticien_item(id: "692ba5b8-d448-4208-9241-e2c7ce8ffeaa", data: { specialite_id: { id: 6, libelle: "cardiologie" } }) {
+  update_praticien_item(id: "03f24d7b-efda-3fbe-ae53-0c0c0edef089", data: { specialite_id: { id: "1" } }) {
     id
     nom
     specialite_id {
+      id
       libelle
     }
   }

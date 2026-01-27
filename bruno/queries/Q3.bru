@@ -1,0 +1,30 @@
+meta {
+  name: Query 3
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  query {
+  praticien(filter: { ville: { _eq: "Paris" } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    specialite_id {
+      libelle
+    }
+  }
+}
+}

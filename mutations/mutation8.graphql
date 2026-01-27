@@ -1,5 +1,5 @@
 mutation {
-  delete_praticien_items(ids: ["66ce1773-f0ad-4488-928c-e705b79ffcb9", "b634e48f-1065-4d6c-8867-fe20ce31f96a"]) {
+  delete_praticien_items(ids: ["05a689c4-b9af-46f1-b88e-070d0e361769", "629de314-d785-449c-8a45-196b867b1769"]) {
     ids
   }
 }

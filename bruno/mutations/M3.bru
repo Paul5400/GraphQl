@@ -1,0 +1,27 @@
+meta {
+  name: Mutation 3
+  type: graphql
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  update_praticien_item(id: "3e4f5a6b-7c8d-9e0f-a1b2-c3d4e5f6a7b8", data: { specialite_id: { id: 1 } }) {
+    id
+    nom
+    specialite_id {
+      libelle
+    }
+  }
+}
+}

@@ -1,15 +1,14 @@
 mutation {
   create_praticien_item(data: {
-    id: "3e4f5a6b-7c8d-9e0f-a1b2-c3d4e5f6a7b8",
-    nom: "Bernard",
-    prenom: "Luc",
-    ville: "Nancy",
-    email: "luc.bernard@test.fr",
-    telephone: "0602030405",
-    titre: "Dr.",
-    specialite_id: { id: 6, libelle: "cardiologie" }
+    id: "629de314-d785-449c-8a45-196b867b1769",
+    nom: "Martin",
+    prenom: "Paul",
+    ville: "Paris",
+    email: "paul.martin.1769526014@test.fr",
+    telephone: "0701020304",
+    organisation: true,
+    specialite_id: { id: "1", libelle: "médecine générale" }
   }) {
-    id
     nom
     specialite_id {
       libelle

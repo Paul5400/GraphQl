@@ -1,0 +1,30 @@
+meta {
+  name: Query 2
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  query {
+  praticien {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    specialite_id {
+      libelle
+    }
+  }
+}
+}

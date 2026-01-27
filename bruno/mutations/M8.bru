@@ -1,0 +1,23 @@
+meta {
+  name: Mutation 8
+  type: graphql
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  delete_praticien_items(ids: ["b1a62fc4-58e2-4616-893c-dd0398195fb9", "c2dcf76f-cb60-4cf1-9be9-f2e5b584e20a"]) {
+    ids
+  }
+}
+}

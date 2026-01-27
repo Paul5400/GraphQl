@@ -1,0 +1,33 @@
+meta {
+  name: Mutation 2
+  type: graphql
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  create_praticien_item(data: {
+    id: "05a689c4-b9af-46f1-b88e-070d0e36c383",
+    nom: "Dupont",
+    prenom: "Jean",
+    ville: "Nancy",
+    email: "jean.dupont.1769522489@test.fr",
+    telephone: "0601020304",
+    organisation: false
+  }) {
+    id
+    nom
+    prenom
+  }
+}
+}

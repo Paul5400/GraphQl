@@ -1,5 +1,5 @@
 mutation {
-  create_specialite_item(data: { libelle: "cardiologie", description: "Maladies du cœur" }) {
+  create_specialite_item(data: { libelle: "cardiologie_1769510862", description: "Maladies du cœur" }) {
     id
     libelle
   }

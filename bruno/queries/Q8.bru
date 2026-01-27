@@ -1,0 +1,33 @@
+meta {
+  name: Query 8
+  type: graphql
+  seq: 8
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  query {
+  parisiens: praticien(filter: { ville: { _eq: "Paris" } }) {
+    ...PraticienFields
+  }
+  bourbonnais: praticien(filter: { ville: { _eq: "Bourdon-les-Bains" } }) {
+    ...PraticienFields
+  }
+}
+
+fragment PraticienFields on praticien {
+  id
+  nom
+  prenom
+  ville
+}
+}

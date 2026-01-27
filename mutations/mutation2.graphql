@@ -1,10 +1,13 @@
 mutation {
   create_praticien_item(data: {
+    id: "05a689c4-b9af-46f1-b88e-070d0e361769",
     nom: "Dupont",
     prenom: "Jean",
     ville: "Nancy",
-    email: "jean.dupont@test.fr",
-    telephone: "0601020304"
+    email: "jean.dupont.1769526014@test.fr",
+    telephone: "0601020304",
+    organisation: false,
+    specialite_id: { id: "1", libelle: "médecine générale" }
   }) {
     id
     nom

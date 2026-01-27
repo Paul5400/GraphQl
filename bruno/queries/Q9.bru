@@ -1,0 +1,27 @@
+meta {
+  name: Query 9
+  type: graphql
+  seq: 9
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  query GetPraticiensByVille($ville: String!) {
+  praticien(filter: { ville: { _eq: $ville } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+  }
+}
+}

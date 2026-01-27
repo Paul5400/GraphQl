@@ -1,0 +1,35 @@
+meta {
+  name: Mutation 4
+  type: graphql
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  create_praticien_item(data: {
+    id: "190de314-d785-449c-8a45-196b867b9122",
+    nom: "Martin",
+    prenom: "Paul",
+    ville: "Paris",
+    email: "paul.martin.1769522489@test.fr",
+    telephone: "0701020304",
+    organisation: true,
+    specialite_id: { id: "1" }
+  }) {
+    nom
+    specialite_id {
+      libelle
+    }
+  }
+}
+}

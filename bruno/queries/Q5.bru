@@ -1,0 +1,35 @@
+meta {
+  name: Query 5
+  type: graphql
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  query {
+  praticien(filter: { email: { _contains: ".fr" } }) {
+    id
+    nom
+    prenom
+    telephone
+    ville
+    email
+    specialite_id {
+      libelle
+    }
+    structure_id {
+      nom
+      ville
+    }
+  }
+}
+}

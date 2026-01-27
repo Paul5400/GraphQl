@@ -1,0 +1,24 @@
+meta {
+  name: Mutation 1
+  type: graphql
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
+  create_specialite_item(data: { libelle: "cardiologie_1769510862", description: "Maladies du cœur" }) {
+    id
+    libelle
+  }
+}
+}

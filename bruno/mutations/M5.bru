@@ -1,6 +1,23 @@
-mutation {
+meta {
+  name: Mutation 5
+  type: graphql
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/graphql
+  body: graphql
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:graphql {
+  mutation {
   create_praticien_item(data: { 
-    id: "690a3691-51a0-485d-8fec-c10cc00fa3ab",
+    id: "690a3691-51a0-485d-8fec-c10cc00fa3aa",
     nom: "Robert", 
     prenom: "Luc",
     ville: "Lille",
@@ -14,4 +31,5 @@ mutation {
       libelle 
     } 
   }
+}
 }
