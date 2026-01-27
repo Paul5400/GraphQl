@@ -35,5 +35,5 @@ Le rapport final détaillé (Interprétations techniques, code et résultats JSO
 👉 **[Compte_Rendu_TD4.md](./Compte_Rendu_TD4.md)**
 
 ---
-**Auteur** : Paul Andrieu (DWM-2)
+**Auteurs** : Paul Andrieu , Lambert Valentino
 **Dépôt Git** : [Paul5400/GraphQL](https://github.com/Paul5400/GraphQL)
