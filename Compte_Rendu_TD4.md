@@ -3,6 +3,7 @@
 **Étudiants :** Paul Andrieu , Valentino Lambert
 **Formation :** DWM-2 (S5)  
 **Contexte :** Optimisation des flux de données pour le projet PratiLib  
+**Lien Git :** https://github.com/Paul5400/GraphQl.git
   
 
 ---
@@ -1024,3 +1025,4 @@ Cette architecture constitue un socle solide pour les évolutions futures de la 
 ---
  Paul Andrieu
  Valentino Lambert
+
