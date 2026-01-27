@@ -1,6 +1,6 @@
 # Compte Rendu GraphQL PratiLib
 
-**Étudiant :** Paul Andrieu  
+**Étudiants :** Paul Andrieu , Valentino Lambert
 **Formation :** DWM-2 (S5)  
 **Contexte :** Optimisation des flux de données pour le projet PratiLib  
   
@@ -1023,4 +1023,4 @@ Cette architecture constitue un socle solide pour les évolutions futures de la 
 
 ---
  Paul Andrieu
-
+ Valentino Lambert
